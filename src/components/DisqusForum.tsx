@@ -21,6 +21,7 @@ export const DisqusForum: React.FC = () => {
         embedScript = document.createElement('script');
         embedScript.src = 'https://smu-agentic-ai.disqus.com/embed.js';
         embedScript.setAttribute('data-timestamp', String(+new Date()));
+        embedScript.crossOrigin = 'anonymous';
         embedScript.async = true;
         embedScript.onerror = () => {
           console.warn('Disqus embed failed to load (blocked by browser or network).');
@@ -40,6 +41,7 @@ export const DisqusForum: React.FC = () => {
         countScript = document.createElement('script');
         countScript.id = 'dsq-count-scr';
         countScript.src = 'https://smu-agentic-ai.disqus.com/count.js';
+        countScript.crossOrigin = 'anonymous';
         countScript.async = true;
         countScript.onerror = () => {
           console.warn('Disqus count script failed to load.');
