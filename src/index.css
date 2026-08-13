@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #0f131e;
+    --surface-card: #1E222D;
+    --border-subtle: #2A2E39;
+    --surface-highest: #313441;
+    --primary-blue: #2962ff;
+    --primary-light: #b6c4ff;
+    --bullish-green: #089981;
+    --bearish-red: #F23645;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: #dfe2f2;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-headline {
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+
+  .font-mono-tabular {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbar for dark financial UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f131e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2E39;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #434656;
+}
