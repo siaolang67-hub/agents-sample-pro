@@ -9,6 +9,7 @@ import { ScreenerTable } from './components/ScreenerTable';
 import { AssetDetailModal } from './components/AssetDetailModal';
 import { SearchModal } from './components/SearchModal';
 import { NewsSection } from './components/NewsSection';
+import { DisqusForum } from './components/DisqusForum';
 import { Footer } from './components/Footer';
 import { ChevronDown } from 'lucide-react';
 
@@ -196,6 +197,9 @@ export default function App() {
           news={SAMPLE_NEWS}
           onSelectSymbol={handleSelectSymbolByName}
         />
+
+        {/* Discussion Forum */}
+        <DisqusForum />
       </main>
 
       {/* Footer */}
